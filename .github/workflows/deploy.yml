@@ -30,7 +30,7 @@ jobs:
 
       - name: Delete old image from ECR
         run: |
-          aws ecr batch-delete-image --repository-name $ECR_REPOSITORY --image-ids imageTag=latest
+          aws ecr batch-delete-image --repository-name ${{ secrets.ECR_REPOSITORY }} --image-ids imageTag=latest
 
       - name: Build, tag, and push image to ECR
         env:
