@@ -3,8 +3,11 @@ import cookieParser from "cookie-parser";
 import bodyParser from "body-parser";
 import productRouter from "./routes/products.js";
 import cors from "cors";
+import { getProduct } from "./helpers/grpc/product.js";
 
 const app = express();
+
+await getProduct("1");
 
 app.use(cookieParser());
 

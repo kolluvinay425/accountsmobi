@@ -1,7 +1,6 @@
 import app from "./app.js";
 import listEndpoints from "express-list-endpoints";
 import mongoose from "mongoose";
-
 if (!process.env.MONGO_URI) {
   throw new Error("No mongo url provided");
 }
