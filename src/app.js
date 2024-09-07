@@ -7,7 +7,7 @@ import { getProduct } from "./helpers/grpc/product.js";
 
 const app = express();
 
-await getProduct("1");
+// await getProduct("1");
 
 app.use(cookieParser());
 

@@ -37,6 +37,7 @@ const configGrpcProducts = () => {
 };
 
 const getProduct = (productId) => {
+  console.log("----------_> from grpc testing");
   if (!client) {
     configGrpcProducts();
   }
