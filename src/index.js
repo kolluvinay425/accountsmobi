@@ -13,6 +13,6 @@ mongoConnection.then(() => {
   app.listen(port, () => {
     console.log(`Connected with mongoDB at ${process.env.MONGO_URI}`);
     console.table(listEndpoints(app));
-    console.log(`server running on port ${port}`);
+    console.log(`server running on port parapampam ${port}`);
   });
 });
